@@ -31,7 +31,7 @@ const Products = () => {
             .then(response => {
                 const data = response.data.data.data;
                 setProducts(data);
-                setFilteredProducts(data.slice(0, 4)); // initially show only 4
+                setFilteredProducts(data.slice(0, 4)); 
                 const unique = [...new Set(data.map((p: Product) => p.category?.name))].filter(
                     (cat): cat is string => typeof cat === 'string'
                 );
@@ -45,10 +45,8 @@ const Products = () => {
     }, []);
 
 
-    const handleProductClick = (product) => {
-        // Save product data to localStorage
-        localStorage.setItem('selectedProduct', JSON.stringify(product));
-        // Navigate to the product details page
+    const handleProductClick = (product: Product) => { 
+        localStorage.setItem('selectedProduct', JSON.stringify(product)); 
         router.push(`/products/${product.id}`);
     };
     

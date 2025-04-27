@@ -20,7 +20,6 @@ const ProductDetails = () => {
   const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
-    // Get product data from localStorage
     const storedProduct = localStorage.getItem('selectedProduct');
     if (storedProduct) {
       setProduct(JSON.parse(storedProduct));
