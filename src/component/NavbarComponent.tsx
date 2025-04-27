@@ -17,7 +17,7 @@ const NavbarComponent = () => {
 
             <div className='flex items-center gap-5'>
                 <Link href={"/"} className='hover:text-theme font-semibold'>Home</Link> 
-                <Link href={"/"} className='hover:text-theme font-semibold'>Products</Link> 
+                <Link href={"/products"} className='hover:text-theme font-semibold'>Products</Link> 
                 <Link href={"/"} className='hover:text-theme font-semibold'>Orders</Link> 
                 <Link href={"/"} className='hover:text-theme' > <ShoppingCart/> </Link> 
                 <Link href={"/"} className='hover:text-theme'>   <User /></Link> 
