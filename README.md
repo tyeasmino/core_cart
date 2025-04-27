@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-Check it out here: [corecart.vercel.app](https://corecart.vercel.app)
+Check it out here: [core-cart.vercel.app](https://core-cart.vercel.app/)
 
 ---
 
